@@ -1,0 +1,146 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  background-color: #f2e4c8;
+  text-align: center;
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
+
+/* Header Styles */
+header {
+  background-color: #d4af37;
+  color: #fff;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+header h1 {
+  margin: 0;
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #d4af37;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #c7a024;
+}
+
+nav a.active {
+  background-color: #c7a024;
+} 
+
+.nav-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #d4af37;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #c7a024;
+}
+
+.nav-button.active {
+  background-color: #c7a024;
+}
+
+
+/* Main Content Styles */
+main {
+  flex: 1;
+  min-height: calc(100vh - 160px); /* 100% viewport height minus header and footer height */
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2e4c8;
+  color: #fff;
+  text-align: justify;
+}
+
+
+
+main p {
+  color: #5c3317;
+  padding: 10px;
+  font-size: 23px;
+}
+
+footer {
+  background-color: #d4af37;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: auto; /* Push the footer to the bottom */
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Div Styles */
+main .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+main .grid div {
+  background-color: #c7a024;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  width: 350px;
+  min-height: 200px; /* Adjust the minimum height as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
